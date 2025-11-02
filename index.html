@@ -1,0 +1,1354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Developer Assignment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/animate.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="navbar navbar-expand-lg navbar-dark custom-navbar py-3">
+      <div class="container">
+        <!-- Logo -->
+        <a
+          class="navbar-brand d-flex align-items-center wow fadeInLeft"
+          href="#"
+        >
+          <img src="./assets/img/logo.png" alt="Jobma" class="img-fluid" />
+        </a>
+
+        <!-- Toggler -->
+        <button
+          class="navbar-toggler border-0 wow fadeInRight"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasExample"
+          aria-controls="offcanvasExample"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Links -->
+        <div
+          class="offcanvas offcanvas-start bg-secondary"
+          tabindex="-1"
+          id="offcanvasExample"
+          aria-labelledby="offcanvasExampleLabel"
+        >
+          <div class="offcanvas-header">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+              <img src="./assets/img/logo.png" alt="Jobma" class="img-fluid" />
+            </a>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body position-relative">
+            <ul
+              class="navbar-nav position-relative text-start ms-lg-auto mb-2 mb-lg-0"
+            >
+              <li
+                class="nav-item dropdown wow fadeInRight"
+                data-wow-delay="0.1s"
+              >
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                >
+                  Our Products
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#">Video Interview</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">AI Assessment</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item wow fadeInRight" data-wow-delay="0.2s">
+                <a class="nav-link" href="#">AI in Hiring</a>
+              </li>
+
+              <li
+                class="nav-item dropdown wow fadeInRight"
+                data-wow-delay="0.3s"
+              >
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                >
+                  Solutions
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#">For Enterprises</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">For Recruiters</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li
+                class="nav-item dropdown wow fadeInRight"
+                data-wow-delay="0.4s"
+              >
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                >
+                  Resources
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Blog</a></li>
+                  <li><a class="dropdown-item" href="#">Guides</a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <div
+              class="d-flex align-items-center gap-3 ms-xl-5 ps-xl-5 wow fadeInRight"
+              data-wow-delay="0.5s"
+            >
+              <a href="#" class="btn btn-outline-light login-btn">Login</a>
+              <!-- for desktop -->
+              <div class="dropdown lang-dropdown d-none d-lg-block">
+                <button
+                  class="btn text-green-primary dropdown-toggle"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  ENG
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">ENG</a></li>
+                  <li><a class="dropdown-item" href="#">ESP</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">FRA</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- for mobile -->
+              <div class="dropup lang-dropdown d-lg-none">
+                <button
+                  class="btn text-green-primary dropdown-toggle"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  ENG
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">ENG</a></li>
+                  <li><a class="dropdown-item" href="#">ESP</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">FRA</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section
+      class="hero-section text-center text-white d-flex align-items-center"
+    >
+      <div class="container position-relative z-1">
+        <h6 class="hero-subtitle wow fadeInUp">
+          <span class="text-gradient">HIRE SMARTER, FASTER WITH AI</span>
+        </h6>
+        <h1 class="hero-title wow fadeInUp" data-wow-delay="0.2s">
+          <span class="fw-light position-relative">
+            AI-Powered
+            <img
+              src="./assets/img/robo.png"
+              alt="Robo"
+              class="position-absolute robo-img img-fluid"
+            />
+          </span>
+          <br />
+          <span class="fw-bold">VIDEO INTERVIEWS</span>
+        </h1>
+        <p class="hero-desc mx-auto wow fadeInUp" data-wow-delay="0.4s">
+          Jobma’s AI video interview software augments human decision-making in
+          hiring and delivers high-quality talent faster.
+        </p>
+        <div class="mt-4 wow fadeInUp" data-wow-delay="0.6s">
+          <a href="#" class="btn btn-demo">
+            Schedule a Demo
+            <span class="btn-icon">
+              <img
+                src="./assets/icons/arrow-up-right.svg"
+                alt="Arrow up right"
+              />
+            </span>
+          </a>
+        </div>
+      </div>
+      <div class="wave-bg">
+        <img src="./assets/img/wave.png" alt="wave" class="img-fluid pe-none" />
+      </div>
+    </section>
+
+    <!-- COMPANIES REVIEW SECTION -->
+    <section class="bg-secondary py-5">
+      <div class="container">
+        <div class="row gy-4 align-items-center">
+          <div class="col-lg-8 col-xl-9">
+            <div class="row g-4 text-center text-md-start companies-review">
+              <div class="col-6 col-md-3 wow fadeInUp" data-wow-delay="0.1s">
+                <img
+                  src="./assets/img/tr-logomark.png"
+                  alt="Trust Radius"
+                  class="img-fluid mb-3"
+                />
+                <div
+                  class="d-flex gap-2 justify-content-md-start justify-content-center"
+                >
+                  <img
+                    src="./assets/icons/star.svg"
+                    alt="star"
+                    class="img-fluid"
+                  />
+                  <img
+                    src="./assets/icons/star.svg"
+                    alt="star"
+                    class="img-fluid"
+                  />
+                  <img
+                    src="./assets/icons/star.svg"
+                    alt="star"
+                    class="img-fluid"
+                  />
+                  <img
+                    src="./assets/icons/star.svg"
+                    alt="star"
+                    class="img-fluid"
+                  />
+                  <img
+                    src="./assets/icons/star.svg"
+                    alt="star"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+              <div class="col-6 col-md-3 wow fadeInUp" data-wow-delay="0.2s">
+                <img
+                  src="./assets/img/capterra.png"
+                  alt="Capterra"
+                  class="img-fluid mb-3"
+                />
+                <div
+                  class="d-flex gap-2 justify-content-md-start justify-content-center"
+                >
+                  <img
+                    src="./assets/icons/star.svg"
+                    alt="star"
+                    class="img-fluid"
+                  />
+                  <img
+                    src="./assets/icons/star.svg"
+                    alt="star"
+                    class="img-fluid"
+                  />
+                  <img
+                    src="./assets/icons/star.svg"
+                    alt="star"
+                    class="img-fluid"
+                  />
+                  <img
+                    src="./assets/icons/star.svg"
+                    alt="star"
+                    class="img-fluid"
+                  />
+                  <img
+                    src="./assets/icons/star.svg"
+                    alt="star"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+              <div class="col-6 col-md-3 wow fadeInUp" data-wow-delay="0.3s">
+                <img
+                  src="./assets/img/crowd.png"
+                  alt="Crowd"
+                  class="img-fluid mb-3"
+                />
+                <div
+                  class="d-flex gap-2 justify-content-md-start justify-content-center"
+                >
+                  <img
+                    src="./assets/icons/star.svg"
+                    alt="star"
+                    class="img-fluid"
+                  />
+                  <img
+                    src="./assets/icons/star.svg"
+                    alt="star"
+                    class="img-fluid"
+                  />
+                  <img
+                    src="./assets/icons/star.svg"
+                    alt="star"
+                    class="img-fluid"
+                  />
+                  <img
+                    src="./assets/icons/star.svg"
+                    alt="star"
+                    class="img-fluid"
+                  />
+                  <img
+                    src="./assets/icons/star.svg"
+                    alt="star"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+              <div class="col-6 col-md-3 wow fadeInUp" data-wow-delay="0.4s">
+                <img
+                  src="./assets/img/sourceforge.png"
+                  alt="Sourceforge"
+                  class="img-fluid mb-3"
+                />
+                <div
+                  class="d-flex gap-2 justify-content-md-start justify-content-center"
+                >
+                  <img
+                    src="./assets/icons/star.svg"
+                    alt="star"
+                    class="img-fluid"
+                  />
+                  <img
+                    src="./assets/icons/star.svg"
+                    alt="star"
+                    class="img-fluid"
+                  />
+                  <img
+                    src="./assets/icons/star.svg"
+                    alt="star"
+                    class="img-fluid"
+                  />
+                  <img
+                    src="./assets/icons/star.svg"
+                    alt="star"
+                    class="img-fluid"
+                  />
+                  <img
+                    src="./assets/icons/star.svg"
+                    alt="star"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 col-xl-3 pt-4 pt-lg-0 border-top border-lg-0 border-left-lg"
+          >
+            <div
+              class="d-flex gap-3 justify-content-evenly justify-content-lg-end"
+            >
+              <img
+                src="./assets/img/mid-market.svg"
+                alt="Mid Market"
+                class="img-fluid pe-none wow fadeInRight"
+                data-wow-delay="0.1s"
+              />
+              <img
+                src="./assets/img/fall.svg"
+                alt="Fall"
+                class="img-fluid pe-none wow fadeInRight"
+                data-wow-delay="0.2s"
+              />
+              <img
+                src="./assets/img/enterprise.svg"
+                alt="Enterprises"
+                class="img-fluid pe-none wow fadeInRight"
+                data-wow-delay="0.3s"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section class="experience text-secondary">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-12 col-lg-8 offset-lg-2 text-center">
+            <h2 class="experience-main-title mb-2 wow fadeInUp">
+              Transform Your Hiring Experience
+            </h2>
+            <p class="experience-para wow fadeInUp">
+              Multi-format virtual interviewing with Jobma's unified hiring
+              platform. Do more with automation, ethical AI, and human-powered
+              support.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="row g-4 align-items-center flex-column-reverse flex-md-row mt-4"
+        >
+          <div class="col-md-6 text-center text-md-end wow fadeInLeft">
+            <h3 class="h3-title mb-3">Jobma AI</h3>
+            <p class="mb-4 ms-md-auto">
+              Jobma uses ethical AI for standardized hiring. Ensure fair
+              evaluation with AI scoring and proctoring and get accurate
+              multi-lingual transcriptions for video and audio responses. Ensure
+              fair evaluation with AI scoring and proctoring and get accurate
+              multi-lingual transcriptions for video and audio responses.
+            </p>
+            <a href="#" class="btn btn-learn-more">
+              Know more
+              <span class="btn-icon">
+                <img
+                  src="./assets/icons/arrow-up-right.svg"
+                  alt="Arrow up right"
+                />
+              </span>
+            </a>
+          </div>
+          <div class="col-md-6">
+            <img
+              src="./assets/img/jobma-ai-img.png"
+              alt="Jobma AI"
+              class="img-fluid pe-none wow fadeInRight"
+            />
+          </div>
+        </div>
+
+        <div class="row g-4 align-items-center mt-4">
+          <div class="col-md-6">
+            <img
+              src="./assets/img/one-way-video-interview.png"
+              alt="One-Way Video Interviewing"
+              class="img-fluid pe-none wow fadeInLeft"
+            />
+          </div>
+          <div class="col-md-6 text-center text-md-start wow fadeInRight">
+            <h3 class="h3-title mb-3">One-Way Video Interviewing</h3>
+            <p class="mb-4 me-md-auto">
+              Jobma uses ethical AI for standardized hiring. Ensure fair
+              evaluation with AI scoring and proctoring and get accurate
+              multi-lingual transcriptions for video and audio responses. Ensure
+              fair evaluation with AI scoring and proctoring and get accurate
+              multi-lingual transcriptions for video and audio responses.
+            </p>
+            <a href="#" class="btn btn-learn-more">
+              Know more
+              <span class="btn-icon">
+                <img
+                  src="./assets/icons/arrow-up-right.svg"
+                  alt="Arrow up right"
+                />
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <div
+          class="row g-4 align-items-center flex-column-reverse flex-md-row mt-4"
+        >
+          <div class="col-md-6 text-center text-md-end wow fadeInLeft">
+            <h3 class="h3-title mb-3">Live Video Interviewing</h3>
+            <p class="mb-4 ms-md-auto">
+              Jobma uses ethical AI for standardized hiring. Ensure fair
+              evaluation with AI scoring and proctoring and get accurate
+              multi-lingual transcriptions for video and audio responses. Ensure
+              fair evaluation with AI scoring and proctoring and get accurate
+              multi-lingual transcriptions for video and audio responses.
+            </p>
+            <a href="#" class="btn btn-learn-more">
+              Know more
+              <span class="btn-icon">
+                <img
+                  src="./assets/icons/arrow-up-right.svg"
+                  alt="Arrow up right"
+                />
+              </span>
+            </a>
+          </div>
+          <div class="col-md-6">
+            <img
+              src="./assets/img/live-video-interview.png"
+              alt="Live Video Interviewing"
+              class="img-fluid pe-none wow fadeInRight"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUESTED COMPANIES -->
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h2 class="experience-main-title mb-lg-5 mb-4 wow fadeInUp">
+              Trusted & Loved by Companies Globally
+            </h2>
+          </div>
+        </div>
+      </div>
+      <div class="bg-secondary wow fadeInUp py-5 px-3">
+        <div class="container">
+          <div class="swiper img-carousel">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  src="./assets/img/image-535.png"
+                  alt="Image 1"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./assets/img/image-536.png"
+                  alt="Image 2"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./assets/img/image-537.png"
+                  alt="Image 3"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./assets/img/image-538.png"
+                  alt="Image 4"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./assets/img/image-539.png"
+                  alt="Image 5"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./assets/img/image-540.png"
+                  alt="Image 6"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./assets/img/image-541.png"
+                  alt="Image 7"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./assets/img/image-542.png"
+                  alt="Image 8"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERVIEW KIT SECTION -->
+    <section class="interview-section bg-secondary">
+      <div class="container">
+        <div
+          class="d-flex flex-column flex-md-row gap-3 justify-content-between align-items-center mb-5"
+        >
+          <h3 class="section-title text-white mb-0 wow fadeInLeft">
+            Create Your Interview Kit With Multiple Type Questions
+          </h3>
+
+          <!-- Custom Arrows -->
+          <div class="d-flex gap-2 ml-auto wow fadeInRight">
+            <button class="custom-arrow prev">
+              <img
+                src="./assets/icons/left-arrow.svg"
+                alt="Left Arrow"
+                class="img-fluid"
+              />
+            </button>
+            <button class="custom-arrow next">
+              <img
+                src="./assets/icons/right-arrow.svg"
+                alt="Right Arrow"
+                class="img-fluid"
+              />
+            </button>
+          </div>
+        </div>
+
+        <!-- Swiper -->
+        <div id="interview-swiper" class="swiper wow fadeInUp">
+          <div class="swiper-wrapper">
+            <!-- Card 1 -->
+            <div class="swiper-slide question-card active-card">
+              <div class="content-wrapper">
+                <img
+                  src="./assets/img/video-question-img.png"
+                  alt="Video"
+                  class="card-img-top rounded mb-3"
+                />
+                <div class="icon mb-3 text-info fs-3">
+                  <img
+                    src="./assets/icons/monitor.svg"
+                    alt="Video Questions"
+                    class="img-fluid"
+                  />
+                </div>
+                <h5 class="text-white">Video Questions</h5>
+                <p class="text-light small mt-3">
+                  Jobma uses ethical AI for standardized hiring. Ensure fair
+                  evaluation with AI scoring and proctoring and get accurate
+                  multi-lingual transcriptions for video and audio responses.
+                </p>
+                <button
+                  class="btn btn-outline-light know-more login-btn mt-auto"
+                >
+                  Know more
+                </button>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="swiper-slide question-card">
+              <div class="content-wrapper">
+                <img
+                  src="./assets/img/video-question-img.png"
+                  alt="Audio"
+                  class="card-img-top rounded mb-3"
+                />
+                <div class="icon mb-3 text-success fs-3">
+                  <img
+                    src="./assets/icons/audio-message.svg"
+                    alt="Audio Messages"
+                    class="img-fluid"
+                  />
+                </div>
+                <h5 class="text-white">Audio</h5>
+                <p class="text-light small mt-3">
+                  Jobma uses ethical AI for standardized hiring. Ensure fair
+                  evaluation with AI scoring and proctoring and get accurate
+                  multi-lingual transcriptions for video and audio responses.
+                </p>
+                <button
+                  class="btn btn-outline-light know-more login-btn mt-auto"
+                >
+                  Know more
+                </button>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="swiper-slide question-card">
+              <div class="content-wrapper">
+                <img
+                  src="./assets/img/video-question-img.png"
+                  alt="Essay"
+                  class="card-img-top rounded mb-3"
+                />
+                <div class="icon mb-3 text-info fs-3">
+                  <img
+                    src="./assets/icons/essay.svg"
+                    alt="Essay Questions"
+                    class="img-fluid"
+                  />
+                </div>
+                <h5 class="text-white">Essay</h5>
+                <p class="text-light small mt-3">
+                  Jobma uses ethical AI for standardized hiring. Ensure fair
+                  evaluation with AI scoring and proctoring and get accurate
+                  multi-lingual transcriptions for video and audio responses.
+                </p>
+                <button
+                  class="btn btn-outline-light know-more login-btn mt-auto"
+                >
+                  Know more
+                </button>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="swiper-slide question-card">
+              <div class="content-wrapper">
+                <img
+                  src="./assets/img/video-question-img.png"
+                  alt="MCQ"
+                  class="card-img-top rounded mb-3"
+                />
+                <div class="icon mb-3 text-warning fs-3">
+                  <img
+                    src="./assets/icons/mcq.svg"
+                    alt="MCQ/MSQ"
+                    class="img-fluid"
+                  />
+                </div>
+                <h5 class="text-white">MCQ/MSQ</h5>
+                <p class="text-light small mt-3">
+                  Jobma uses ethical AI for standardized hiring. Ensure fair
+                  evaluation with AI scoring and proctoring and get accurate
+                  multi-lingual transcriptions for video and audio responses.
+                </p>
+                <button
+                  class="btn btn-outline-light know-more login-btn mt-auto"
+                >
+                  Know more
+                </button>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="swiper-slide question-card">
+              <div class="content-wrapper">
+                <img
+                  src="./assets/img/video-question-img.png"
+                  alt="Coding"
+                  class="card-img-top rounded mb-3"
+                />
+                <div class="icon mb-3 text-primary fs-3">
+                  <img
+                    src="./assets/icons/coding.svg"
+                    alt="Coding Questions"
+                    class="img-fluid"
+                  />
+                </div>
+                <h5 class="text-white">Coding</h5>
+                <p class="text-light small mt-3">
+                  Jobma uses ethical AI for standardized hiring. Ensure fair
+                  evaluation with AI scoring and proctoring and get accurate
+                  multi-lingual transcriptions for video and audio responses.
+                </p>
+                <button
+                  class="btn btn-outline-light know-more login-btn mt-auto"
+                >
+                  Know more
+                </button>
+              </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="swiper-slide question-card">
+              <div class="content-wrapper">
+                <img
+                  src="./assets/img/video-question-img.png"
+                  alt="Video"
+                  class="card-img-top rounded mb-3"
+                />
+                <div class="icon mb-3 text-info fs-3">
+                  <img
+                    src="./assets/icons/monitor.svg"
+                    alt="Video Questions"
+                    class="img-fluid"
+                  />
+                </div>
+                <h5 class="text-white">Video Questions</h5>
+                <p class="text-light small mt-3">
+                  Jobma uses ethical AI for standardized hiring. Ensure fair
+                  evaluation with AI scoring and proctoring and get accurate
+                  multi-lingual transcriptions for video and audio responses.
+                </p>
+                <button
+                  class="btn btn-outline-light know-more login-btn mt-auto"
+                >
+                  Know more
+                </button>
+              </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="swiper-slide question-card">
+              <div class="content-wrapper">
+                <img
+                  src="./assets/img/video-question-img.png"
+                  alt="Audio"
+                  class="card-img-top rounded mb-3"
+                />
+                <div class="icon mb-3 text-success fs-3">
+                  <img
+                    src="./assets/icons/audio-message.svg"
+                    alt="Audio Messages"
+                    class="img-fluid"
+                  />
+                </div>
+                <h5 class="text-white">Audio</h5>
+                <p class="text-light small mt-3">
+                  Jobma uses ethical AI for standardized hiring. Ensure fair
+                  evaluation with AI scoring and proctoring and get accurate
+                  multi-lingual transcriptions for video and audio responses.
+                </p>
+                <button
+                  class="btn btn-outline-light know-more login-btn mt-auto"
+                >
+                  Know more
+                </button>
+              </div>
+            </div>
+
+            <!-- Card 8 -->
+            <div class="swiper-slide question-card">
+              <div class="content-wrapper">
+                <img
+                  src="./assets/img/video-question-img.png"
+                  alt="Essay"
+                  class="card-img-top rounded mb-3"
+                />
+                <div class="icon mb-3 text-info fs-3">
+                  <img
+                    src="./assets/icons/essay.svg"
+                    alt="Essay Questions"
+                    class="img-fluid"
+                  />
+                </div>
+                <h5 class="text-white">Essay</h5>
+                <p class="text-light small mt-3">
+                  Jobma uses ethical AI for standardized hiring. Ensure fair
+                  evaluation with AI scoring and proctoring and get accurate
+                  multi-lingual transcriptions for video and audio responses.
+                </p>
+                <button
+                  class="btn btn-outline-light know-more login-btn mt-auto"
+                >
+                  Know more
+                </button>
+              </div>
+            </div>
+
+            <!-- Card 9 -->
+            <div class="swiper-slide question-card">
+              <div class="content-wrapper">
+                <img
+                  src="./assets/img/video-question-img.png"
+                  alt="MCQ"
+                  class="card-img-top rounded mb-3"
+                />
+                <div class="icon mb-3 text-warning fs-3">
+                  <img
+                    src="./assets/icons/mcq.svg"
+                    alt="MCQ/MSQ"
+                    class="img-fluid"
+                  />
+                </div>
+                <h5 class="text-white">MCQ/MSQ</h5>
+                <p class="text-light small mt-3">
+                  Jobma uses ethical AI for standardized hiring. Ensure fair
+                  evaluation with AI scoring and proctoring and get accurate
+                  multi-lingual transcriptions for video and audio responses.
+                </p>
+                <button
+                  class="btn btn-outline-light know-more login-btn mt-auto"
+                >
+                  Know more
+                </button>
+              </div>
+            </div>
+
+            <!-- Card 10 -->
+            <div class="swiper-slide question-card">
+              <div class="content-wrapper">
+                <img
+                  src="./assets/img/video-question-img.png"
+                  alt="Coding"
+                  class="card-img-top rounded mb-3"
+                />
+                <div class="icon mb-3 text-primary fs-3">
+                  <img
+                    src="./assets/icons/coding.svg"
+                    alt="Coding Questions"
+                    class="img-fluid"
+                  />
+                </div>
+                <h5 class="text-white">Coding</h5>
+                <p class="text-light small mt-3">
+                  Jobma uses ethical AI for standardized hiring. Ensure fair
+                  evaluation with AI scoring and proctoring and get accurate
+                  multi-lingual transcriptions for video and audio responses.
+                </p>
+                <button
+                  class="btn btn-outline-light know-more login-btn mt-auto"
+                >
+                  Know more
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHEEL GLOBAL DOMINATION SECTION -->
+    <section>
+      <div class="container">
+        <div class="row g-4 align-items-center position-relative z-0">
+          <div class="wheel-sec-bg-wave"></div>
+          <div class="col-lg-6 text-lg-start text-center wow fadeInLeft">
+            <h3 class="h3-title mb-3 wow fadeInLeft">
+              Jobma’s global domination!
+            </h3>
+            <p
+              class="experience-para mb-4 wow fadeInLeft"
+              data-wow-delay="0.1s"
+            >
+              Jobma is currently available in 50+ countries, in 16 different
+              languages, and is rapidly growing. We serve different domains like
+              technology, healthcare, insurance etc.
+            </p>
+            <a
+              href="#"
+              class="btn btn-demo wow fadeInLeft"
+              data-wow-delay="0.2s"
+            >
+              Schedule a Demo
+              <span class="btn-icon">
+                <img
+                  src="./assets/icons/arrow-up-right.svg"
+                  alt="Arrow up right"
+                />
+              </span>
+            </a>
+          </div>
+          <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.3s">
+            <div class="wheel-wrapper">
+              <div class="wheel-center">
+                <h2>50+</h2>
+                <p>COUNTRIES</p>
+                <hr />
+                <h2>16</h2>
+                <p>LANGUAGES</p>
+              </div>
+              <svg class="wheel-svg" width="520" height="520"></svg>
+              <div class="wheel-labels"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIAL SECTION -->
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-8 offset-lg-2 text-center">
+            <h2 class="experience-main-title mb-lg-5 mb-4 wow fadeInUp">
+              What are our clients saying about us?
+            </h2>
+            <div class="mb-lg-5 mb-4 wow fadeInUp">
+              <span>
+                <svg
+                  width="36"
+                  height="64"
+                  viewBox="0 0 36 64"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1.97419 63.2002L33.5743 63.2002C34.6646 63.2002 35.5488 62.316 35.5488 61.2251L35.5488 29.625C35.5488 28.5346 34.6646 27.6504 33.5743 27.6504L7.93753 27.6504C7.89896 15.8003 16.642 7.90044 25.6738 7.90044C26.7648 7.90044 27.649 7.01625 27.649 5.92532L27.649 1.97508C27.649 0.884155 26.7648 -3.89149e-05 25.6738 -3.90103e-05C13.8297 -4.00457e-05 -0.000922137 7.90044 -0.000923864 27.6504L-0.000926799 61.2251C-0.000926894 62.316 0.883266 63.2002 1.97419 63.2002V63.2002Z"
+                    fill="#1F292D"
+                  />
+                </svg>
+              </span>
+              <span>
+                <svg
+                  width="36"
+                  height="64"
+                  viewBox="0 0 36 64"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1.97419 63.2002L33.5743 63.2002C34.6646 63.2002 35.5488 62.316 35.5488 61.2251L35.5488 29.625C35.5488 28.5346 34.6646 27.6504 33.5743 27.6504L7.93753 27.6504C7.89896 15.8003 16.642 7.90044 25.6738 7.90044C26.7648 7.90044 27.649 7.01625 27.649 5.92532L27.649 1.97508C27.649 0.884155 26.7648 -3.89149e-05 25.6738 -3.90103e-05C13.8297 -4.00457e-05 -0.000922137 7.90044 -0.000923864 27.6504L-0.000926799 61.2251C-0.000926894 62.316 0.883266 63.2002 1.97419 63.2002V63.2002Z"
+                    fill="#1F292D"
+                  />
+                </svg>
+              </span>
+            </div>
+
+            <p class="experience-para mb-0 wow fadeInUp">
+              Jobma played a critical part in the successful recruitment of
+              graduates for our 2018 Corporate Graduate Scheme. It really
+              supported our hiring managers in the screening process to help
+              them proceed with the top quality applicants. It also relieved the
+              burden of having to do over 150 telephone interviews which as we
+              all know are time-consuming, diary dependent and not as effective
+              as reviewing a short video interview.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA SECTION  -->
+    <section class="pt-0">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-xxl-10 offset-xxl-1">
+            <div
+              class="bg-gradient overlay position-relative z-0 rounded-4 px-3 py-5 p-md-5"
+            >
+              <div class="bg-wave"></div>
+              <div class="row g-4 position-relative">
+                <div
+                  class="col-md-7 col-xl-6 offset-xl-1 text-white text-center text-md-start wow fadeInLeft"
+                >
+                  <h2 class="h3-title mb-3 fw-semibold">Have a question?</h2>
+                  <p class="fs-4 max-w-500">
+                    Book a time for a short call to discuss the possibilities of
+                    working together.
+                  </p>
+                  <a href="#" class="btn text-white cta-btn">
+                    Book a call
+                    <span class="btn-icon">
+                      <img
+                        src="./assets/icons/arrow-up-right.svg"
+                        alt="Arrow up right"
+                      />
+                    </span>
+                  </a>
+                </div>
+                <div class="col-md-5 text-center col-xl-4 wow fadeInRight">
+                  <button type="button" class="bg-transparent border-0">
+                    <img
+                      src="./assets/icons/play-button.svg"
+                      alt="Play Button"
+                      class="img-fluid"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer py-5">
+      <div class="container">
+        <div class="row gy-4">
+          <!-- Logo + Description -->
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-first">
+              <a href="#" class="footer-logo d-block mb-3">
+                <img src="./assets/img/logo.png" alt="Jobma" height="69" />
+              </a>
+              <p class="footer-desc">
+                Our sole motive at Jobma is to make hiring simple and structured
+                for our clients. We strive to continually improve our platform
+                to help companies of all sizes.
+              </p>
+
+              <h6 class="footer-subtitle mt-4">Subscribe</h6>
+              <form class="footer-subscribe d-flex align-items-center">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Email@address.com"
+                  aria-label="Email"
+                />
+                <button type="submit" class="btn btn-send">
+                  <svg
+                    width="21"
+                    height="20"
+                    viewBox="0 0 21 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M18.6957 0.0754476L1.15998 5.50875C0.835144 5.59498 0.546834 5.78378 0.337954 6.04706C0.129073 6.31035 0.0107887 6.63404 0.000703066 6.96997C-0.00938257 7.3059 0.0892699 7.63611 0.281979 7.91145C0.474688 8.1868 0.751152 8.39255 1.07023 8.49811L9.02343 11.163C9.05242 11.174 9.07893 11.1907 9.10145 11.212C9.12396 11.2333 9.14203 11.2589 9.1546 11.2873L12.0818 18.8815C12.2003 19.1865 12.4093 19.448 12.6809 19.6307C12.9524 19.8134 13.2734 19.9085 13.6007 19.9032H13.6421C13.9748 19.9022 14.2987 19.7962 14.5677 19.6003C14.8367 19.4045 15.0371 19.1288 15.1402 18.8124L20.7185 2.06375C20.806 1.79559 20.8187 1.50868 20.7555 1.2338C20.6923 0.958925 20.5554 0.706456 20.3595 0.503484C20.15 0.283552 19.883 0.126834 19.5889 0.051162C19.2948 -0.0245096 18.9853 -0.0160952 18.6957 0.0754476Z"
+                      fill="url(#paint0_linear_1_3421)"
+                    />
+                    <defs>
+                      <linearGradient
+                        id="paint0_linear_1_3421"
+                        x1="10.3975"
+                        y1="0"
+                        x2="10.3975"
+                        y2="19.9034"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stop-color="#9BCA3B" />
+                        <stop offset="1" stop-color="#009EFB" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </button>
+              </form>
+
+              <div class="mt-3 d-flex gap-2">
+                <a href="#" target="_blank">
+                  <img
+                    src="./assets/img/google-play-store.png"
+                    alt="Google Play"
+                    height="40"
+                  />
+                </a>
+                <a href="#" target="_blank">
+                  <img
+                    src="./assets/img/apple-store.png"
+                    alt="App Store"
+                    height="40"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h6 class="footer-subtitle">Get in touch</h6>
+            <p class="mb-1">
+              <a href="mailto:support@jobma.com">support@jobma.com</a>
+            </p>
+            <p class="mb-1">
+              <a href="mailto:sales@jobma.com">sales@jobma.com</a>
+            </p>
+            <p class="mb-4">
+              <a href="tel:1-800-986-5620">1-800-986-5620 </a>
+            </p>
+
+            <h6 class="footer-subtitle">Headquarter</h6>
+            <p class="footer-address">
+              13911 Ridgedale Drive, Suite 230<br />
+              Minnetonka, Minnesota 55305,<br />
+              United States
+            </p>
+          </div>
+
+          <!-- Useful Links -->
+          <div class="col-lg-2 col-6">
+            <h6 class="footer-subtitle">Useful links</h6>
+            <ul class="list-unstyled footer-links">
+              <li><a href="#">For Jobseekers</a></li>
+              <li><a href="#">Partners</a></li>
+              <li><a href="#">Resources</a></li>
+              <li><a href="#">Why Jobma?</a></li>
+              <li><a href="#">Blogs</a></li>
+              <li><a href="#">FAQs</a></li>
+            </ul>
+          </div>
+
+          <!-- Company -->
+          <div class="col-lg-3 col-6">
+            <h6 class="footer-subtitle">Company</h6>
+            <ul class="list-unstyled footer-links">
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Contact us</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">GDPR</a></li>
+              <li><a href="#">CCPA</a></li>
+            </ul>
+
+            <!-- Social Icons -->
+            <div class="social-icons mt-3 d-flex flex-wrap gap-2">
+              <a href="#" target="_blank" class="social-icon">
+                <svg
+                  width="9"
+                  height="18"
+                  viewBox="0 0 9 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.60869 8.98361H5.94071V18H1.92095V8.98361H0V5.80328H1.92095V3.77049C1.92095 2.29508 2.66798 0 6.01186 0H9V3.08197H6.83004C6.47431 3.08197 5.97628 3.2459 5.97628 3.93443V5.80328H9L8.60869 8.98361Z"
+                    fill="url(#paint0_linear_1_3350)"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_1_3350"
+                      x1="4.5"
+                      y1="0"
+                      x2="4.5"
+                      y2="18"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#9BCA3B" />
+                      <stop offset="1" stop-color="#009EFB" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </a>
+              <a href="#" target="_blank" class="social-icon">
+                <svg
+                  width="16"
+                  height="15"
+                  viewBox="0 0 16 15"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.321 8.97826V14.6289H12.0424V9.35496C12.0424 8.03648 11.5696 7.1261 10.3716 7.1261C9.45741 7.1261 8.92149 7.72256 8.66929 8.31901C8.60624 8.53876 8.57472 8.82129 8.57472 9.10382V14.5975H5.29615C5.29615 14.5975 5.32767 5.68204 5.29615 4.74027H8.57472V6.12154L8.54319 6.15293H8.57472V6.12154C9.01607 5.4623 9.80418 4.48913 11.538 4.48913C13.7132 4.52052 15.321 5.93318 15.321 8.97826ZM1.85996 0C0.725069 0 0 0.722028 0 1.6952C0 2.63697 0.725068 3.39039 1.82843 3.39039H1.85996C2.99485 3.39039 3.71991 2.63697 3.71991 1.6952C3.65687 0.75342 2.96332 0 1.85996 0ZM0.189149 14.5975H3.46772V4.77166H0.189149V14.5975Z"
+                    fill="url(#paint0_linear_1_3353)"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_1_3353"
+                      x1="7.6605"
+                      y1="0"
+                      x2="7.6605"
+                      y2="14.6289"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#9BCA3B" />
+                      <stop offset="1" stop-color="#009EFB" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </a>
+              <a href="#" target="_blank" class="social-icon">
+                <svg
+                  width="18"
+                  height="14"
+                  viewBox="0 0 18 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M18 1.65673C17.3329 1.93496 16.6272 2.12466 15.8831 2.21319C16.6529 1.77055 17.2302 1.08762 17.5125 0.252936C16.794 0.657633 16.0114 0.948509 15.1646 1.11292C14.4975 0.42999 13.5353 0 12.4704 0C10.4305 0 8.77548 1.58085 8.77548 3.52845C8.77548 3.80668 8.81397 4.07227 8.86529 4.33785C5.799 4.18609 3.07912 2.78229 1.25731 0.644986C0.936565 1.1635 0.75695 1.77055 0.75695 2.41554C0.75695 3.64228 1.41126 4.71725 2.39914 5.34959C1.79615 5.33695 1.21882 5.17254 0.73129 4.90696V4.95754C0.73129 6.66486 2.00143 8.09395 3.69494 8.42276C3.38703 8.49864 3.05346 8.54923 2.71989 8.54923C2.47612 8.54923 2.24519 8.52394 2.02709 8.486C2.50178 9.88979 3.86172 10.9142 5.47826 10.9395C4.20813 11.888 2.61725 12.4571 0.885246 12.4571C0.590164 12.4571 0.295082 12.4444 0 12.4065C1.62937 13.4056 3.57947 14 5.65788 14C12.4448 14 16.1654 8.61247 16.1654 3.9458L16.1525 3.49051C16.8838 2.99729 17.4996 2.36495 18 1.65673Z"
+                    fill="url(#paint0_linear_1_3357)"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_1_3357"
+                      x1="9"
+                      y1="0"
+                      x2="9"
+                      y2="14"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#9BCA3B" />
+                      <stop offset="1" stop-color="#009EFB" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </a>
+              <a href="#" target="_blank" class="social-icon">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M19.9018 5.86885C19.8691 4.78689 19.6727 4.06557 19.4435 3.44262C19.1817 2.7541 18.7889 2.16393 18.2979 1.67213C17.8069 1.14754 17.1849 0.754098 16.5303 0.52459C15.8756 0.262295 15.1555 0.0983603 14.108 0.0655734C13.0278 -3.76193e-07 12.7005 0 9.98363 0C7.26678 0 6.90671 -3.76193e-07 5.85925 0.0655734C4.77905 0.0983603 4.05892 0.295082 3.43699 0.52459C2.74959 0.786885 2.16039 1.18033 1.66939 1.67213C1.14566 2.16393 0.752864 2.78688 0.523732 3.44262C0.261866 4.09836 0.0981999 4.81967 0.0654667 5.86885C2.48759e-07 6.95082 0 7.27869 0 10C0 12.7213 2.48759e-07 13.082 0.0654667 14.1311C0.0981999 15.2131 0.294599 15.9344 0.523732 16.5574C0.785598 17.2459 1.1784 17.8361 1.66939 18.3279C2.16039 18.8525 2.78232 19.2459 3.43699 19.4754C4.09165 19.7377 4.81178 19.9016 5.85925 19.9344C6.93944 19.9672 7.26678 20 9.98363 20C12.7005 20 13.0606 20 14.108 19.9344C15.1882 19.9016 15.9083 19.7049 16.5303 19.4754C17.8723 18.9508 18.9525 17.9016 19.4763 16.5246C19.7381 15.8689 19.9018 15.1475 19.9345 14.0984C19.9673 13.0164 20 12.6885 20 9.96721C20 7.2459 19.9345 6.91803 19.9018 5.86885ZM18.0687 14.0656C18.036 15.0492 17.8723 15.5738 17.7087 15.9344C17.3813 16.8197 16.6939 17.5082 15.8101 17.8361C15.4501 17.9672 14.9264 18.1311 13.9444 18.1967C12.8969 18.2295 12.5696 18.2623 9.88543 18.2623C7.20131 18.2623 6.87398 18.2623 5.82651 18.1967C4.84452 18.1639 4.32079 18 3.96072 17.8361C3.53519 17.6721 3.14239 17.4098 2.81506 17.082C2.48773 16.7541 2.22586 16.3607 2.06219 15.9344C1.93126 15.5738 1.76759 15.0492 1.70213 14.0656C1.66939 13.0164 1.63666 12.6885 1.63666 10C1.63666 7.31147 1.63666 6.98361 1.70213 5.93443C1.73486 4.95082 1.89853 4.42623 2.06219 4.06557C2.22586 3.63934 2.48773 3.2459 2.81506 2.91803C3.14239 2.59016 3.53519 2.32787 3.96072 2.16393C4.32079 2.03279 4.84452 1.86885 5.82651 1.80328C6.93944 1.80328 7.26678 1.77049 9.91817 1.77049C12.6023 1.77049 12.9296 1.77049 13.9771 1.83607C14.9591 1.86885 15.4828 2.03279 15.8429 2.19672C16.2684 2.36066 16.6612 2.62295 16.9885 2.95082C17.3159 3.27869 17.5777 3.67213 17.7414 4.09836C17.8723 4.45902 18.036 4.98361 18.1015 5.96721C18.1342 7.01639 18.1669 7.34426 18.1669 10.0328C18.1669 12.7213 18.1342 13.0164 18.0687 14.0656Z"
+                    fill="url(#paint0_linear_1_3360)"
+                  />
+                  <path
+                    d="M9.91841 4.85156C7.07062 4.85156 4.7793 7.14664 4.7793 9.9991C4.7793 12.8516 7.07062 15.1466 9.91841 15.1466C12.7662 15.1466 15.0575 12.8516 15.0575 9.9991C15.0575 7.14664 12.7662 4.85156 9.91841 4.85156ZM9.91841 13.3434C8.08535 13.3434 6.57962 11.8352 6.57962 9.9991C6.57962 8.16304 8.08535 6.65484 9.91841 6.65484C11.7515 6.65484 13.2572 8.16304 13.2572 9.9991C13.2572 11.8352 11.7515 13.3434 9.91841 13.3434Z"
+                    fill="url(#paint1_linear_1_3360)"
+                  />
+                  <path
+                    d="M11.1293 10.0002C11.1293 10.656 10.6056 11.2133 9.91816 11.2133C9.2635 11.2133 8.70703 10.6887 8.70703 10.0002C8.70703 9.34449 9.23076 8.78711 9.91816 8.78711C10.5728 8.78711 11.1293 9.34449 11.1293 10.0002Z"
+                    fill="url(#paint2_linear_1_3360)"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_1_3360"
+                      x1="10"
+                      y1="0"
+                      x2="10"
+                      y2="20"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#9BCA3B" />
+                      <stop offset="1" stop-color="#009EFB" />
+                    </linearGradient>
+                    <linearGradient
+                      id="paint1_linear_1_3360"
+                      x1="9.91841"
+                      y1="4.85156"
+                      x2="9.91841"
+                      y2="15.1466"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#9BCA3B" />
+                      <stop offset="1" stop-color="#009EFB" />
+                    </linearGradient>
+                    <linearGradient
+                      id="paint2_linear_1_3360"
+                      x1="9.91816"
+                      y1="8.78711"
+                      x2="9.91816"
+                      y2="11.2133"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#9BCA3B" />
+                      <stop offset="1" stop-color="#009EFB" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </a>
+              <a href="#" target="_blank" class="social-icon">
+                <svg
+                  width="21"
+                  height="15"
+                  viewBox="0 0 21 15"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M21 3.20665C21 1.43409 19.5942 0 17.8653 0H3.13472C1.39709 0 0 1.43409 0 3.20665V11.7933C0 13.5659 1.40582 15 3.13472 15H17.8565C19.5942 15 20.9913 13.5659 20.9913 11.7933L21 3.20665ZM8.39127 11.1253V3.05523L14.39 7.09026L8.39127 11.1253Z"
+                    fill="url(#paint0_linear_1_3366)"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_1_3366"
+                      x1="10.5"
+                      y1="0"
+                      x2="10.5"
+                      y2="15"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#9BCA3B" />
+                      <stop offset="1" stop-color="#009EFB" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/wow.min.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
